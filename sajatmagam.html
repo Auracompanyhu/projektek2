@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elképesztő Életrajz</title>
+    <link rel="stylesheet" href="stylesss.css">
+    <!-- Font Awesome Ikonok -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS Animációs Könyvtár -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Háttér Videó -->
+    <div class="background">
+        <video autoplay muted loop>
+            <source src="hatter2.mp4" type="video/mp4">
+            A böngésződ nem támogatja a videó tag-et.
+        </video>
+    </div>
+
+    <!-- Navigációs Sáv -->
+    <header>
+        <div class="container">
+            <h1>Papp Bulcsú</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.canva.com/design/DAGEuKqOVbU/R0Nf36NnISJY51GyLr8BMQ/view?utm_content=DAGEuKqOVbU&utm_campaign=designshare&utm_medium=link&utm_source=editor">Életrajz</a></li>
+                    <li><a href="#skills">Készségek</a></li>
+                    <li><a href="#projects">Projektjeim</a></li>
+                    <li><a href="#contact">Kapcsolat</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Fő Tartalom -->
+    <main>
+        <!-- Életrajz Szekció -->
+        
+        <!-- Popup Ablak -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" id="closePopup">&times;</span>
+                <section id="bio" class="bio" data-aos="fade-up">
+                    <img src="kep.jpg" style="width: 50%;">
+                    <p>Papp Bulcsú vagyok, 11. osztályos informatika szakos diák, akit szenvedélyesen érdekel a programozás és a webfejlesztés. Jövőbeli célom, hogy sikeres szoftverfejlesztő legyek.</p>
+                    <a href="https://www.canva.com/design/DAGEuKqOVbU/R0Nf36NnISJY51GyLr8BMQ/view?utm_content=DAGEuKqOVbU&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank"><button id="openPopup" class="popup-btn">Több információ</button></a>
+                </section>
+            </div>
+        </div>
+
+        <!-- Készségek Szekció -->
+        <section id="skills" class="skills" data-aos="fade-up">
+            <h2>Készségek</h2>
+            <ul>
+                <li><i class="fab fa-html5"></i> HTML</li>
+                <li><i class="fab fa-css3-alt"></i> CSS</li>
+                <li><i class="fab fa-js"></i> Python</li>
+                <li><i class="fab fa-react"></i> Javascript</li>
+                <li><i class="fab fa-node-js"></i> C#</li>
+            </ul>
+            <div class="skills-graph">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;" data-aos="slide-right"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;" data-aos="slide-right" data-aos-delay="100"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Python</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;" data-aos="slide-right" data-aos-delay="200"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Javascript</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 50%;" data-aos="slide-right" data-aos-delay="300"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>C#</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 20%;" data-aos="slide-right" data-aos-delay="400"></div>
+                    </div>
+                </div>
+        </section>
+      <!-- Projektjeim Szekció -->
+<section id="projects" class="projects" data-aos="fade-up">
+    <h2>Projektjeim</h2>
+    <div class="projects-container">
+        <div class="project-card" data-aos="zoom-in">
+            <div class="card-front">
+                <h1 style="text-align: center;">Aura</h1>
+                <img src="aura.png" alt="Projekt 1">
+            </div>
+            <div class="card-back">
+                <h3>Aura</h3>
+                <p>Fitnesz ruházati webshop, amely stílusos és kényelmes edzőruhákat kínál a sportolás szerelmeseinek.</p>
+                <a href="https://auracompanyhu.github.io/Aura1.6/index.html" class="project-link">Megtekintés</a>
+            </div>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card-front">
+                <h1 style="text-align: center;">Démonkirály</h1>
+                <img src="demon.png" alt="Projekt 2">
+            </div>
+            <div class="card-back">
+                <h3>Démonkirály</h3>
+                <p>Egy több részes, döntéseken alapuló történetjáték Pythonban, ahol a játékos különböző útvonalakat választva fedezi fel a világot, és ezek határozzák meg a történet kimenetelét.</p>
+                <a href="https://varadiprogram.github.io/DemonKiralyHTML/" class="project-link">Megtekintés</a>
+            </div>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card-front">
+                <h1 style="text-align: center;">Támogatói oldal</h1>
+                <img src="tech4.png" width="120%" alt="Projekt 3">
+            </div>
+            <div class="card-back">
+                <h3>Támogatói oldal</h3>
+                <p>A Tech4Study és az Eleqtroom által szervezett konferencia támogatói oldala.</p>
+                <a href="https://auracompanyhu.github.io/Tamogatoi-oldal/" class="project-link">Megtekintés</a>
+            </div>
+        </div>
+        <!-- További projekt kártyák hozzáadhatók itt -->
+    </div>
+</section>
+
+        <!-- Kapcsolat Szekció -->
+        <section id="contact" class="contact" data-aos="fade-up">
+            <h2>Kapcsolat</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Neved" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email címed" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Üzenet" required></textarea>
+                </div>
+                <button type="submit">Küldés <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </section>
+    </main>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzf7E0nmmdUbvy6JlgTQyJh-pB6hWft5mMV75v9HiD3qw96KPx-8dnT7oOSqxVcsZSpRw/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script type="text/javascript">
+        if (!Array.isArray(window.qbOptions)) {
+          window.qbOptions = []
+        }
+        window.qbOptions.push({"baseUrl":"https://botsrv2.com","use":"Nog0YE51ZDEpWJwX/A7VaDrleVnEB6xgO"});
+      </script>
+      <script type="text/javascript" src="https://static.botsrv2.com/website/js/widget2.js" crossorigin="anonymous" defer data-no-minify="1" data-cfasync="false"></script>
+    <!-- Lábléc -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Minden jog fenntartva.</p>
+            <div class="social-links">
+                <a href="https://github.com/Auracompanyhu" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Fájlok -->
+    <!-- AOS Animáció -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
